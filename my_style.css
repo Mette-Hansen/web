@@ -1,45 +1,13 @@
-body {
-    background-color: rgb(12, 23, 32);
-}
-
-h1 {
-    margin-top: 50px;
-    padding-bottom: 10px;
-    text-align: center;
-    font-style: normal;
-    border-bottom: 1px solid whitesmoke;
-}
-
-p {
-    margin-bottom: 0.5%;
-}
-
-label {
-    margin-left: 0.5%;
-}
-
-
-
-input, text, number, textarea, button {
-    color: gray;
-    padding-left: 0.5%;
-    font-size: medium;
-    /*margin-left: 1.5%;*/
-    margin-top: 0.2cm;
-}
-
-* {
-    font: 1em Sans-serif;
-    color: rgb(255, 255, 255);
-    margin-bottom: .5%;    
-}
-
-div :not("tracks") {
-    margin-left: 0.5cm;
-    margin-top: 0.5cm;
-}
-
-.submit {
-    text-align: center;
-}
-
+form {
+    display: inline-grid;
+    grid-row-gap: 16px;
+  }
+  
+  .grid {
+    display: grid;
+  }
+  
+  .grid.track {
+    grid-row-gap: 5px;
+  }
+  
