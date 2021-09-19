@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Album library</title>
   <link rel="stylesheet" href="my_style.css">
+  <script src="code.js"></script>
 </head>
 
 <body>
@@ -51,6 +52,11 @@
       <input type="text" name="track" class="inputForm" />
       <input type="text" name="track" class="inputForm" />
       <input type="text" name="track" class="inputForm" />
+      <div class="btn-group">
+        <input type="button" value="Add" onclick="addElement()" style="width: 50%">
+        <input type="button" value="Remove" onclick="removeElement()" style="width: 48%">
+      </div>
+
     </div>
 
     <input type="submit" value="Submit">
