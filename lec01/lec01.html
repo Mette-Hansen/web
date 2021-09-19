@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+        <h1 style="font-size:22px;">Music Library</h1>
+        <link rel="stylesheet" href="my_style.css">
+        <script>
+            src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+            function remove() {
+                var elem = document.getElementById("#track");
+                document.parentNode.removeChild(elem);
+                //elem.remove();
+                return false;
+            }
+
+            function addTrack() {
+                var para = document.createElement("track");
+                document.parentNode.appendChild(para);
+
+                // var input = document.createElement("input");
+                // input.setAttribute('type',"text");
+                // var parent = document.getElementById("tracks");
+                // parent.appendChild(input);
+            }
+
+        </script>
+    </head>
+    <div>
+        <form>
+            <p for="full_name">Name of the album: </p>
+            <input type="text" id="full_name" name="full_name" value="Type here..." onfocus="this.value=''"><br>
+
+            <p for="re_year">Release Year: </p>
+            <input type="date" id="re_year" name="re_year" value="2018-07-22" lang="en_US"><br>
+
+            <p>Choose the artist:</p>
+            <!--input type="checkbox" id="artist1" name="artist1" value="Beyonce">
+        <label for="artist1">Beyonce</label><br>
+        <input type="checkbox" id="artist2" name="artist2" value="Jay_Z">
+        <label for="artist2">Jay Z</label><br-->
+            <datalist id="all_artists">
+                <option value="Person_1">Person 1</option>
+                <option value="Person_2">Person 2</option>
+                <option value="Person_3">Person 3</option>
+                <option value="Person_4">Person 4</option>
+                <option value="Person_5">Person 5</option>
+                <option value="Person_6">Person 6</option>
+            </datalist>
+            <input type="text" list="all_artists" title="artist-selector" id="artist-selector"
+                placeholder="Start Typing" dr>
+
+            <p>Choose the type of the song:</p>
+            <input type="radio" id="type" name="type" value="Single Song">
+            <label for="type1">Single Song</label><br>
+            <input type="radio" id="type" name="type" value="EP">
+            <label for="type2">EP</label><br>
+            <input type="radio" id="type" name="type" value="Album">
+            <label for="type3">Album</label><br>
+
+            <p>Description of the song: </p>
+            <textarea id="description_area" name="description_area" rows="5" cols="50" contenteditable="true"
+                onfocus="this.value=''">
+            </textarea>
+
+            <div class="tracks">
+                <p>Input tracks: </p>
+                <label for="track1">Track 1:</label>
+                <input type="text" id="track" name="track1" value="Type here..." onfocus="this.value=''">
+                <button href="" onclick="remove()">Remove</button><br>
+
+                <label for="track2">Track 2: </label>
+                <input type="text" id="track" name="track2" value="Type here..." onfocus="this.value=''">
+                <button onclick="remove()">Remove</button><br>
+
+                <label for="track3">Track 3: </label>
+                <input type="text" id="track" name="track3" value="Type here..." onfocus="this.value=''">
+                <button onclick="remove()">Remove</button><br>
+            </div>
+            <div class="add">
+                <button onclick="addTrack()">Add track</button>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
