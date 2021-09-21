@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>Album library</title>
   <link rel="stylesheet" href="my_style.css">
-  <script src="code.js"></script>
 </head>
 
 <body>
@@ -41,27 +40,27 @@
       <label> Description: </label>
       <textarea name="description" id="description" class="inputForm"></textarea>
     </div>
-    <div class='grid track'>
+    <div class='grid track' id="track_parent">
       <label> Tracks: </label>
       <input type="text" name="track" class="inputForm" />
-      <input type="text" name="track" class="inputForm" />
-      <input type="text" name="track" class="inputForm" />
-      <input type="text" name="track" class="inputForm" />
-      <input type="text" name="track" class="inputForm" />
-      <input type="text" name="track" class="inputForm" />
-      <input type="text" name="track" class="inputForm" />
-      <input type="text" name="track" class="inputForm" />
-      <input type="text" name="track" class="inputForm" />
-      <div class="btn-group">
-        <input type="button" value="Add" onclick="addElement()" style="width: 50%">
-        <input type="button" value="Remove" onclick="removeElement()" style="width: 48%">
-      </div>
-
+      <input type="text" name="track" class="inputForm" id="remove"/>
+      <input type="text" name="track" class="inputForm" id="remove"/>
+      <input type="text" name="track" class="inputForm" id="remove"/>
+      <input type="text" name="track" class="inputForm" id="remove"/>
+      <input type="text" name="track" class="inputForm" id="remove"/>
+      <input type="text" name="track" class="inputForm" id="remove"/>
+      <input type="text" name="track" class="inputForm" id="remove"/>
+      <input type="text" name="track" class="inputForm" id="remove"/>
+    </div>
+    <div class="btn-group">
+      <input type="button" value="Add" onclick="addElement()" style="width: 50%">
+      <input type="button" value="Remove" onclick="removeElement()" style="width: 48%">
     </div>
 
     <input type="submit" value="Submit">
 
   </form>
+  <script src="code.js"></script>
 </body>
 
 </html>
